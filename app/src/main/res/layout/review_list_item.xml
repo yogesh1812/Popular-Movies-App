@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/review_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/topDivider"
+        style="@style/Divider" />
+
+    <TextView
+        android:id="@+id/review_text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topDivider"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:hint="@string/review_text_hint"
+        android:maxLength="200"
+        android:maxLines="4"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/read_more_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review_text_tv"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/read_more_hint"
+        android:text="@string/read_more_text"
+        android:textAlignment="viewEnd"
+        android:textColor="#3EA6FF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/review_author_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read_more_tv"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/review_author_hint"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>
